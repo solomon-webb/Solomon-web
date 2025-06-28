@@ -1,0 +1,367 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0%;
+      padding: 0%;
+    }
+
+    body {
+      background: #041c4e;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+     background: #0D1936;
+      padding: 10px 15px;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      left: 0%;
+      right: 0%;
+      z-index: 1000;
+    }
+
+    .nav-logo p {
+      font-weight: bold;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .navigation a,
+    .nav-button button,
+    #logoutBtn {
+      font-size: 14px;
+      margin: 5px;
+      padding: 8px 12px;
+      text-decoration: none;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      background: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .navigation a:hover,
+    .nav-button button:hover,
+    #logoutBtn:hover {
+     background: #fff;
+      color: black;
+    }
+
+    #logoutBtn {
+      background: none;
+      border: 1px solid #fff;
+      color: #fff;
+     
+    }
+
+    #logoutBtn:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .form-box,
+    .Register-form {
+      width: 90%;
+      max-width: 400px;
+      position: relative;
+      top: 45px;
+     flex-direction: column;
+      padding: 20px;
+      background: #0D1936;
+      border-radius: 10px;
+    }
+
+    .top span{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+ span {
+  font-size: small;
+  color: #fff;
+ }
+    .top a {
+      color: #fff;
+      text-decoration: none;
+    }
+.top a:hover {
+    text-decoration: underline;
+}
+    .top header {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 10px;
+      text-align: center;
+      padding: 10px 0 10px 0;
+      color: #fff;
+    }
+
+    .input-box {
+      margin: 20px 0;
+      position: relative;
+      display: flex;
+    }
+
+    .input-field {
+      width: 100%;
+      height: 50px;
+      padding-top: 0;
+      padding-bottom: 0%;
+      padding-left: 10px;
+      padding-right: 30px;
+      font-size: 16px;
+      border: 2px solid #FFF;
+      border-radius: 10px;
+     background: #0D1936;
+      color: #fff;
+      font-size: 17px;
+    }
+    .input-field:valid {
+        border: 1px solid #fff;
+    }
+     .input-field:focus {
+        border: 1px
+    }
+ .label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px;
+    color: #fff;
+    transition: .2s;
+    
+}
+.input-field:valid ~ .label,
+.input-field:focus ~ .label {
+    top: 0;
+  background: #0D1936;
+    color: #fff;
+    font-size: 14px;
+}
+.input-field:valid ~ label {
+    color: #fff;
+}
+    .submit {
+      background: #0D1936;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      cursor: pointer;
+      border: 2px solid #fff;
+      transition: .3s;
+    }
+
+    .submit:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    #homePage {
+      display: none;
+      text-align: center;
+      padding: 50px 15px;
+      color: #FFF;
+      
+    }
+.home-dashb {
+   position: relative;
+      top: 60px;
+      width: 400px;
+      padding: 0 20px;
+}
+    #homePage h1 {
+      font-size: 22px;
+      color: #FFF;
+    }
+
+    .home-dashboard {
+      margin-top: 30px;
+      color: #000;
+    }
+
+    .home-dashboard h2 {
+      margin-bottom: 10px;
+      color: #FFF;
+    }
+
+    .home-dashboard ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .home-dashboard ul li {
+      margin: 5px 0;
+    }
+    .home-dashb p {
+      padding-top: 15px;
+    }
+ .home-dashboard ul li a {
+  text-decoration: none;
+  color: #000;
+ }
+  .home-dashboard p {
+    font-weight: 900;
+    font-size: 16px;
+  }
+  .home-actions {
+    margin: 20px 0;
+  }
+  .two-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .one {
+    margin-right: 2px;
+  }
+  .one input {
+    accent-color: #0D1936;
+    border-radius: 5px;
+  }
+  .one label {
+    color: #FFF;
+  }
+  .two a {
+    text-decoration: none;
+    color: #FFF;
+  }
+  .two a:hover {
+    text-decoration: underline;
+  }
+    .home-actions button {
+      padding: 12px;
+      border: none;
+      border: 2px solid #fff;
+      color: #FFF;
+      border-radius: 5px;
+      margin: 5px 0;
+      width: 90%;
+      background: none;
+      max-width: 300px;
+      cursor: pointer;
+      transition: .3s ease-in-out;
+    }
+   .home-actions button:hover {
+    background: #fff;
+    color: #000;
+   }
+.home-actions h2 {
+  padding-top: 10px;
+}
+@media screen and (max-width: 500px) {
+.input-field:valid {
+    border: 1px solid #FFF;
+   }  
+   iframe {
+  max-width: 100%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home-dashb {
+  max-width: 100%;
+}
+body {
+  max-width: 100%;
+}
+}
+
+
+    @media screen and (max-width: 480px) {
+      .nav {
+       width: 100%;
+      }
+.Register-form, .form-box {
+    position: relative;
+    top: 50px;
+    margin: 0 20px;
+}
+.one, .two {
+  font-size: small;
+}
+    .opt  {
+      font-size: 2px;
+    }
+    }
+    .select {
+      width: 100%;
+    display: flex;
+    flex-direction: row;
+    }
+    
+    select {
+      width: 100%;
+      margin: 0  2px;
+      height: 40px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+     background: #0D1936;
+      color: #fff;
+      font-size: 16px;
+      padding: 0 0 0 10px;
+    }
+    .title p {
+      padding-bottom: 10px;
+      color: #FFF;
+    }
+    .toggle-visibility {
+      position: absolute;
+      right: 10px;
+      top:50%;
+      transform: translateY(-50%);
+    }
+    .toggle-visibility  {
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .optional input {
+      position: relative;
+     
+      accent-color: #fff;
+     height: 30px;
+     width: 20px;
+     border-radius: 10px;
+     margin-right: 10px;
+     border: 1px solid #fff;
+    }
+     .opt {
+      position: absolute;
+      font-size: small;
+      color: #FFF;
+    }
+    iframe {
+      margin-top: 10px;
+      border-radius: 10px;
+      border: 1px solid #fff;
+    }
+    .span {
+      color: #FFF;
+      font-size: 12px;
+    }
+    .span a {
+      color: #fff;
+      font-weight: bolder;
+      text-decoration: none;
+    }
+    .span a:hover {
+      text-decoration: underline;
+    }
