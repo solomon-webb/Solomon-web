@@ -1,75 +1,435 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
-  <title>Solomon Web</title>
-  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="sys.css">
-  <style>
-   
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solo. The best and free website for exploring music online. 100% fre😍😎😎🥰🥰😘😛</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="sys.css" />
+  <link rel="icon" href="Copilot_20250628_195908.png" type="image/png" />
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="shortcut icon" href="Copilot_20250628_195908.png" type="image/x-icon" />
+   <meta name="og:image" content="Copilot_20250628_195908.png">
+<meta name="description" content="Enjoy Smart Short Clips music online.100% free 😍😎😎🥰🥰😘😛" />
+ <meta name="author" content="Towolawi Solomon">
+ <meta property="og:site_name" content="SOLO."/>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <nav class="nav">
     <div class="nav-logo"><p>SOLO.</p></div>
-    <div class="navigation">
-      <a href="#" onclick="goHome()" style="display:none;">Home</a>
-    </div>
     <div class="nav-button" id="authButtons">
       <button onclick="showLogin()">Login</button>
       <button onclick="showRegister()">Register</button>
     </div>
     <button id="logoutBtn" style="display:none;" onclick="logout()">Logout</button>
   </nav>
-
-  <!-- Home Page -->
+   <div class="wrapper">
   <div id="homePage" class="home-dashb">
     <h1>Welcome to SOLO, <span id="usernameDisplay"></span> 🎵</h1>
     <p>You are now logged in.</p>
-
     <div class="home-dashboard">
       <h2>Your Dashboard</h2>
-      <div style="background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+      <div style="background: #fff; padding: 20px; border-radius: 10px;">
         <p>🎶 Start exploring your music space.</p>
         <ul>
-          <li><a href="#">👉 Post your latest song or video</a></li>
-          <li><a href="#">👉 View your performance stats</a></li>
-          <li><a href="#">👉 Join music groups or start one</a></li>
-          <li><a href="#">👉 Chat with other musicians</a></li>
+          <li><a href="#" style="cursor: not-allowed;" >👉 Post your latest song or video(pending)</a></li>
+          <li><a href="#" style="cursor: not-allowed;">👉 View your performance stats(pending)</a></li>
+          <li><a href="#" style="cursor: not-allowed;">👉 Join music groups or start one(pending)</a></li>
+          <li><a href="#" style="cursor: not-allowed;">👉 Chat with other musicians(pending)</a></li>
         </ul>
       </div>
       </div>
-  <iframe width="370" height="270" src="https://www.youtube.com/embed/p1QU3kLFPdg" 
-  title="How to put an HTML website online (on the Internet)" frameborder="0"
-   allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-    gyroscope; picture-in-picture; web-share"
-     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <div class="home-actions">
-      <h2>Quick Actions</h2>
-      <button>🎤 Create a Post</button>
-      <button>🎧 Browse Music</button>
-      <button>📢 Announce a Concert</button>
-    </div>
   </div>
-
+  </div>
+ <main class="container" id="ca"   style="display: none;">
+        <h2 class="section-title">Latest Posts</h2>
+        <!-- Filters -->
+        <div class="filters">
+            <button class="filter-btn active" id="all">All(pending)</button>
+            <button class="filter-btn" onclick="filterPosts()">Hippop(pending)</button>
+            <button class="filter-btn" id="gos">GOSPEL(pending)</button>
+            <button class="filter-btn">other musicians(pending)</button>
+        </div>
+ <div class="blog-grid" id="blog">
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/boy_thousand/song/day-by-day-2?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="Hippop">
+                <div class="card-img">
+                    <img src="{F286C313-C1C5-4A0A-BAA1-494992430C58}.png" alt="day-by-day">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>Simi feat Kiss Daniel</h3>
+                    <p>Day By Day</p>
+                     <div class="meta">
+                    <span style="color: #fff">june 29, 2025</span>
+                        <div class="author">
+                            <img src="{FBA296E7-0253-4DC8-8A61-9B80F4286269}.png" alt="Author">
+                            <span>Kiss daniel </span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/mrfidooooo/song/joy-is-coming?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="Hippop">
+                <div class="card-img">
+                    <img src="{933AF4F8-2518-4398-B22C-8AAC3CFFA9DA}.png" alt="Mr fidooooo">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>Fido</h3>
+                    <p>Joy Is Coming</p>
+                     <div class="meta">
+                    <span style="color: #fff">December 14, 2024</span>
+                        <div class="author">
+                            <img src="{933AF4F8-2518-4398-B22C-8AAC3CFFA9DA}.png" alt="Author">
+                            <span>Fido</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/ayomaff/song/dealer?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="Hippop">
+                <div class="card-img">
+                    <img src="{36F247B3-33D3-44A3-8749-0244E1BCB865}.png" alt="like-i-do">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>Ayo Maff, Fireboy DML</h3>
+                    <p>Dealer</p>
+                     <div class="meta">
+                    <span style="color: #fff">April 16, 2024</span>
+                        <div class="author">
+                            <img src="{36F247B3-33D3-44A3-8749-0244E1BCB865}.png" alt="Author">
+                            <span>Ayo Maff, Fireboy DML</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/flexi37738/song/with-you-1?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="Hippop">
+                <div class="card-img">
+                    <img src="{E1DA05AD-5234-4421-987F-93FECF2362F3}.png" alt="with-you">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>Davido (Feat. Omah Lay)</h3>
+                    <p>With You Speed Up</p>
+                     <div class="meta">
+                    <span style="color: #fff">April 28, 2025</span>
+                        <div class="author">
+                            <img src="{7CFE6484-F3EB-4781-86F2-B3577D4AAA87}.png" alt="Author">
+                            <span>Davido </span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/juma_jux/song/god-design?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="Hippop">
+                <div class="card-img">
+                    <img src="{F81DC8EF-7B4E-4CC3-826B-541A5902D58F}.png" alt="god-design">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>Jux and Phyno</h3>
+                    <p>GOD DESIGN</p>
+                     <div class="meta">
+                    <span style="color: #fff">june 29, 2025</span>
+                        <div class="author">
+                            <img src="{F81DC8EF-7B4E-4CC3-826B-541A5902D58F}.png" alt="Author">
+                            <span>Jux and Phyno</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/kizzdaniel/song/police-6445216?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="Hippop">
+                <div class="card-img">
+                    <img src="{7919F908-E713-4EAF-8E92-679596DBF2AF}.png" alt="police">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>Kiss Daniel, Angelique Kidjo, Johnny Drill</h3>
+                    <p>POLICE</p>
+                     <div class="meta">
+                    <span style="color: #fff">April 10, 2025</span>
+                        <div class="author">
+                            <img src="{7919F908-E713-4EAF-8E92-679596DBF2AF}.png" alt="Author">
+                            <span>Kiss Daniel, Angelique .....</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/kizzdaniel/song/buga?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="Hippop">
+                <div class="card-img">
+                    <img src="{1433FF8C-B749-49A5-B6CB-4ADB97CF1A54}.png" alt="buga">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>Kiss Daniel and Tekno</h3>
+                    <p>BUGA lolo</p>
+                     <div class="meta">
+                    <span style="color: #fff">july 29, 2023</span>
+                        <div class="author">
+                            <img src="{1433FF8C-B749-49A5-B6CB-4ADB97CF1A54}.png" alt="Author">
+                            <span>Kiss Daniel and Tekno</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/fireboydml/song/like-i-do?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="Hippop">
+                <div class="card-img">
+                    <img src="{BD069944-F131-462D-9838-BBB4EEBC5F63}.png" alt="like-i-do">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>Fireboy DML</h3>
+                    <p>LIKE I DO</p>
+                     <div class="meta">
+                    <span style="color: #fff">November 29, 2019</span>
+                        <div class="author">
+                            <img src="{BD069944-F131-462D-9838-BBB4EEBC5F63}.png" alt="Author">
+                            <span>Fireboy DM</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/asakemusic/song/remember?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="Hippop">
+                <div class="card-img">
+                    <img src="{DE1D5A95-75FB-4B46-9D10-9BC5FBF16E8F}.png" alt="ASAKE">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>ASAKE</h3>
+                    <p>REMEBER</p>
+                     <div class="meta">
+                    <span style="color: #fff">June 13, 2023</span>
+                        <div class="author">
+                            <img src="{DE1D5A95-75FB-4B46-9D10-9BC5FBF16E8F}.png" alt="Author">
+                            <span>ASAKE</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>              
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/asakemusic/song/terminator?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="Hippop">
+                <div class="card-img">
+                    <img src="{DEFD5ECA-E283-40DF-BF06-0CCBC035EB0D}.png" alt="ASAKE">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>ASAKE</h3>
+                    <p>Terminator</p>
+                     <div class="meta">
+                    <span style="color: #fff">August 18, 2022</span>
+                        <div class="author">
+                            <img src="{DEFD5ECA-E283-40DF-BF06-0CCBC035EB0D}.png" alt="Author">
+                            <span>ASAKE</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>               
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/naijhub-pr/song/awuke?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="Hippop">
+                <div class="card-img">
+                    <img src="{6180EAA9-6C03-4526-9CCB-1A1327EF584D}.png" alt="Davido">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>DAVIDO ft. YG Marley</h3>
+                    <p>Awuke</p>
+                     <div class="meta">
+                    <span style="color: #fff">August 18, 2022</span>
+                        <div class="author">
+                            <img src="{6180EAA9-6C03-4526-9CCB-1A1327EF584D}.png" alt="Author">
+                            <span>DAVIDO ft. YG Marley</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>                 
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/naijhub-pr/song/awuke?share-user-id=127901006' target="_blank">
+            <article class="blog-card"  id="Hippop">
+                <div class="card-img">
+                    <img src="{F879ACB0-D1A2-4BA2-BE89-ADB520C4701C}.png" alt="Davido">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>DAVIDO </h3>
+                    <p>DODO</p>
+                     <div class="meta">
+                    <span style="color: #fff">September 22, 2015</span>
+                        <div class="author">
+                            <img src="{F879ACB0-D1A2-4BA2-BE89-ADB520C4701C}.png" alt="Author">
+                            <span>DAVIDO </span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>                         
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/emmaomg/song/sope-fun-jesu-pt4-live?share-user-id=127901006' target="_blank" >
+            <article class="blog-card">
+                <div class="card-img">
+                    <img src="{A3FC6864-C28E-41C3-80FA-E457D6E70C11}.png" alt="Emma">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>EmmaOMG & The OhEmGee Band </h3>
+                    <p>S'ope Fun Jesu, Pt.4(live)</p>
+                     <div class="meta">
+                    <span style="color: #fff">February 12, 2024</span>
+                        <div class="author">
+                            <img src="{A3FC6864-C28E-41C3-80FA-E457D6E70C11}.png" alt="Author">
+                            <span>EmmaOMG & The OhEmGee Band </span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>                          
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/officialbbo/song/iranlowo?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="GOSPEL">
+                <div class="card-img">
+                    <img src="{376570EF-5AA1-4D02-9C0C-358B0C15738F}.png" alt="BBO">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>BBO feat. Toluwanisings</h3>
+                    <p>IRANLOWO</p>
+                     <div class="meta">
+                    <span style="color: #fff">June 2, 2022</span>
+                        <div class="author">
+                            <img src="{376570EF-5AA1-4D02-9C0C-358B0C15738F}.png" alt="Author">
+                            <span>BBO feat. Toluwanisings </span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/fireboydml/song/iseoluwa-9515188?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="Hippop">
+                <div class="card-img">
+                    <img src="{CE883903-595D-4578-AA0C-69136CF58FF1}.png" alt="like-i-do">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>Fireboy DML</h3>
+                    <p>ISEOLUWA</p>
+                     <div class="meta">
+                    <span style="color: #fff">August 8, 2024</span>
+                        <div class="author">
+                            <img src="{CE883903-595D-4578-AA0C-69136CF58FF1}.png" alt="Author">
+                            <span>Fireboy DM</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+        <!-- Post 1 -->
+            <a class='p2' href='https://audiomack.com/kelvin-9765/song/yoruba-worship?share-user-id=127901006' target="_blank" >
+            <article class="blog-card"  id="GOSPEL">
+                <div class="card-img">
+                    <img src="{D8BDC67A-0630-4590-A228-309CA8F2FAF9}.png" alt="BB0">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>BBO</h3>
+                    <p>Yoruba Worship</p>
+                     <div class="meta">
+                    <span style="color: #fff">March 1, 2024</span>
+                        <div class="author">
+                            <img src="{D8BDC67A-0630-4590-A228-309CA8F2FAF9}.png" alt="Author">
+                            <span> BBO</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+     <a class='p2' href='https://audiomack.com/toluwanisings/song/e-lagbara?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" >
+                <div class="card-img">
+                    <img src="{EDBB07B1-448C-45DF-8D05-4EAE5279D394}.png" alt="Toluwanisings">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>Toluwanisings Feat. APEKEOLA</h3>
+                    <p>E lagbara</p>
+                     <div class="meta">
+                    <span style="color: #fff">June 8, 2022</span>
+                        <div class="author">
+                            <img src="{EDBB07B1-448C-45DF-8D05-4EAE5279D394}.png" alt="Author">
+                            <span>BBO feat. Toluwanisings </span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+              <a class='p2' href='https://audiomack.com/emmaomg/album/the-ohemgee-choir-project?share-user-id=127901006' target="_blank" >
+            <article class="blog-card" id="GOSPEL">
+                <div class="card-img">
+                    <img src="{DD9814C7-2209-41D7-BFF7-9872217ABBBD}.png" alt="BBO">
+                </div>
+                <div class="card-content">
+                    <span class="category tips">SOLO. net</span>
+                    <h3>EmmaOMG</h3>
+                    <p>The OhEmGee choir project</p>
+                     <div class="meta">
+                    <span style="color: #fff">June 2, 2022</span>
+                        <div class="author">
+                            <img src="{DD9814C7-2209-41D7-BFF7-9872217ABBBD}.png" alt="Author">
+                            <span>BBO feat. Toluwanisings </span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            </a>
+    </div>
+  </main>
   <!-- Login Form -->
+   <div class="dkdkdkd" >
   <div class="form-box" id="loginForm" style="display:none;">
-    <div class="top">
+    <div class="top" >
       <span>Don't have an account? <a href="#" onclick="showRegister()">Register</a></span>
       <header>Login</header>
     </div>
     <form onsubmit="return loginUser()">
       <div class="input-box">
-        <input type="text" id="loginEmail" class="input-field" required >
+        <input type="text" id="loginEmail" class="input-field" required  autocomplete="email" placeholder="Email address">
         <label for="loginEmail" class="label">Email</label>
-    
       </div>
       <div class="input-box">
-        <input type="password" id="loginPassword" class="input-field" required  >
-        <label for="loginPassword"class="label">Password</label>
+        <input type="password" id="loginPassword" class="input-field" required autocomplete="current-password" placeholder="Password" >
+        <label for="loginPassword"class="label">Password</label>       
       </div>
       <div class="two-col">
         <div class="one">
@@ -81,31 +441,31 @@
         </div>
       </div>
       <div class="input-box">
-        <button type="submit" class="submit">Login</button>
+        <button type="submit" class="submit"><span>Login</span></button>
       </div>
     </form>
   </div>
-
+  </div>
   <!-- Register Form -->
+   <div class="cont" >
   <div class="Register-form" id="registerForm">
     <div class="top">
       <span>Already have an account? <a href="#" onclick="showLogin()">Login</a></span>
       <header>Sign up</header>
     </div>
-    <form onsubmit="return registerUser()">
+    <form onsubmit="return registerUser()" id="form1">
       <div class="input-box">
-        <input type="text" id="registerUsername" class="input-field" required autocomplete="off">
+        <input type="text" id="registerUsername" class="input-field" required autocomplete="username" placeholder="Username">
         <label for="registerUsername" class="label">Username</label>
       </div>
       <div class="input-box">
-        <input type="text" id="registerEmail" class="input-field" required autocomplete="off">
+        <input type="text" id="registerEmail" class="input-field" required autocomplete="email" placeholder="Email address">
         <label for="registerEmail" class="label">Email</label>
       </div>
     <div class="title">
   <p>DATE OF BIRTH *</p>
   </div>  
 <div class="select">
-  
 <select id="month" name="month">
   <option value="January">January</option>
   <option value="February">February</option>
@@ -120,137 +480,95 @@
   <option value="November">November</option>
   <option value="December">December</option>
 </select>
-
 <select id="day" name="day">
   <!-- days from 1 to 31 -->
 </select>
-
 <select id="year" name="year">
   <!-- list of years -->
 </select>
 </div>
       <div class="input-box">
-        <input type="password" id="registerPassword" class="input-field" required >
+        <input type="password" id="registerPassword" class="input-field" required autocomplete="new-password" placeholder="Password">
         <label for="registerPassword" class="label">Password</label>
       </div>
       <div class="optional">
-        <input type="checkbox" name="" id="check">
-        <label for="check" class="opt">(optional) it's okay to send email with SOLO. update, tips and special offers. You can opt out at any time </label>
+        <input type="checkbox" name="" id="checkk">
+        <label for="checkk" class="opt">(optional) it's okay to send email with SOLO. update, tips and special offers. You can opt out at any time </label>
       </div>
       <div class="input-box">
-        <button type="submit" class="submit">Register</button>
+        <button type="submit" class="submit"><span>Register</span></button>
       </div>
       <span class="span"><p>By registering you agree to SOLO.<a href="#">Terms of Service </a> and <a href="#">Privacy policy</a> </p></span>
     </form>
   </div>
+  </div>
+<footer>
+  <div class="footer-content">
+     <div class="footer-column">
+    <h1>ABOUT SOLO.</h1>
+    <p>SOLO. Your trusted website where you browse, explore music for free</p>
+    <p>We provide beginner-friendly tutorials and advanced 
+        techniques to help you navigate the world of MUSIC and many more(pending).</p>
+    </div>
+      <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#" onclick="showhome()"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#" style="cursor: not-allowed;"><i class="fas fa-chevron-right"></i> login</a></li>
+                    <li><a href='#' onclick="showssRegister()"><i class="fas fa-chevron-right"></i> Register</a></li>
+                    <li><a href="#em"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column" id="em">
+                <h3>Connect With Us</h3>
+                <p>Subscribe to our newsletter for the latest guides and updates:</p>
+                <div class="search-container" id="em" style="margin: 1rem 0;">
+                  <form action="https://chat.whatsapp.com/FXafrHjm5ILKZpzZRc0ZBA?mode=ems_copy_t" method="post"  target="_blank">
+                    <input type="tel" placeholder="+234816516******" name="number" maxlength="13" class="input-field" autocomplete="off" required>
+                    <input type="submit" value="Send">
+                    </form>
+                   </div>
+                <div class="social-icons">
+                    <div class="tooltip">
+                    <a href="https://www.facebook.com/profile.php?id=61580349068548" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <span class="tooltip-text">Contact us on facebook</span>
+                    </div>
+                    <div class="tooltip">
+                    <a href="https://wa.link/08urey" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                     <span class="tooltip-text">Contact us on whatsapp</span>
+                    </div>
+                    <div class="tooltip">
+                    <a href="https://t.me/Timmzzyy"  target="_blank"><i class="fab fa-telegram"></i></a>
+                     <span class="tooltip-text">Contact us on telegram</span>
+                    </div>
+                    <div class="tooltip">
+                    <a href="https://www.tiktok.com/@solomondamilare18" target="_blank"><i class="fab fa-tiktok"></i></a>
+                     <span class="tooltip-text">Contact us on tiktok</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; copyright <span id="years"></span> SOLO. All rights reserved. Designed By <i class="fas fa-heart" style="color: #fff;"></i> SOLOMON <i class="fas fa-heart" style="color: #fff;"></i> TOWOLAWI <i class="fas fa-heart" style="color: #fff;"></i> and <i class="fas fa-heart" style="color: #fff;"></i> ISREAL(javascript) <i class="fas fa-heart" style="color: #fff;"></i></p>
+        </div>
+</footer>
 
-  <script>
-    function showLogin() {
-      document.getElementById("loginForm").style.display = "block";
-      document.getElementById("registerForm").style.display = "none";
-      document.getElementById("homePage").style.display = "none";
-    }
+<audio id="bg-music" autoplay loop>
+  <source src="WhatsApp Ptt 2025-09-09 at 01.01.14 (online-audio-converter.com).mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-    function showRegister() {
-      document.getElementById("loginForm").style.display = "none";
-      document.getElementById("registerForm").style.display = "block";
-      document.getElementById("homePage").style.display = "none";
-    }
-
-    function goHome() {
-      const loggedInUser = localStorage.getItem("loggedInUser");
-      if (loggedInUser) {
-        const user = JSON.parse(localStorage.getItem(loggedInUser));
-        document.getElementById("usernameDisplay").innerText = user.username;
-        document.getElementById("loginForm").style.display = "none";
-        document.getElementById("registerForm").style.display = "none";
-        document.getElementById("homePage").style.display = "block";
-      } else {
-        alert("Please login to access the home page.");
-        showLogin();
-      }
-    }
-
-    function registerUser() {
-      const username = document.getElementById("registerUsername").value;
-      const email = document.getElementById("registerEmail").value;
-      const password = document.getElementById("registerPassword").value;
-
-      if (localStorage.getItem(email)) {
-        alert("User already exists!");
-        return false;
-      }
-
-      const user = { username, email, password };
-      localStorage.setItem(email, JSON.stringify(user));
-      alert("Registration successful! Please login.");
-      showLogin();
-      return false;
-    }
-
-    function loginUser() {
-      const email = document.getElementById("loginEmail").value;
-      const password = document.getElementById("loginPassword").value;
-      const user = JSON.parse(localStorage.getItem(email));
-
-      if (user && user.password === password) {
-        localStorage.setItem("loggedInUser", email);
-        document.getElementById("usernameDisplay").innerText = user.username;
-        document.getElementById("loginForm").style.display = "none";
-        document.getElementById("registerForm").style.display = "none";
-        document.getElementById("homePage").style.display = "block";
-        document.getElementById("authButtons").style.display = "none";
-        document.getElementById("logoutBtn").style.display = "inline-block";
-      } else {
-        alert("Invalid email or password.");
-      }
-
-      return false;
-    }
-
-    function logout() {
-      localStorage.removeItem("loggedInUser");
-      document.getElementById("homePage").style.display = "none";
-      showLogin();
-      document.getElementById("authButtons").style.display = "inline-block";
-      document.getElementById("logoutBtn").style.display = "none";
-    }
-
-    window.onload = function () {
-      const loggedInUser = localStorage.getItem("loggedInUser");
-      if (loggedInUser) {
-        const user = JSON.parse(localStorage.getItem(loggedInUser));
-        document.getElementById("usernameDisplay").innerText = user.username;
-        document.getElementById("homePage").style.display = "block";
-        document.getElementById("authButtons").style.display = "none";
-        document.getElementById("logoutBtn").style.display = "inline-block";
-        document.getElementById("loginForm").style.display = "none";
-        document.getElementById("registerForm").style.display = "none";
-      } else {
-        showRegister();
-      }
-    };
-  </script>
-  <script>
-  // Populate days (1-31)
-  const daySelect = document.getElementById('day');
-  for (let i = 1; i <= 31; i++) {
-    let option = document.createElement('option');
-    option.value = i;
-    option.text = i;
-    if (i === 5) option.selected = true;
-    daySelect.appendChild(option);
-  }
-
-  // Populate years (e.g. 1900 to 2024)
-  const yearSelect = document.getElementById('year');
-  for (let year = 1900; year <= new Date().getFullYear(); year++) {
-    let option = document.createElement('option');
-    option.value = year;
-    option.text = year;
-    if (year === 1931) option.selected = true;
-    yearSelect.appendChild(option);
-  }
+<script>
+  // Try to autoplay after the page loads
+  window.addEventListener('load', () => {
+    const music = document.getElementById("bg-music");
+    music.play().catch(() => {
+      // If blocked, unmute after first user interaction
+      document.body.addEventListener("click", () => {
+        music.play();
+      }, { once: true });
+    });
+  });
 </script>
+
 </body>
 </html>
