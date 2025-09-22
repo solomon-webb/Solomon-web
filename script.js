@@ -3,13 +3,11 @@ function showLogin() {
       document.getElementById("registerForm").style.display = "none";
       document.getElementById("homePage").style.display = "none";
     }
-
     function showRegister() {
       document.getElementById("loginForm").style.display = "none";
       document.getElementById("registerForm").style.display = "block";
       document.getElementById("homePage").style.display = "none";
     }
-
     function goHome() {
       const loggedInUser = localStorage.getItem("loggedInUser");
       if (loggedInUser) {
@@ -18,13 +16,11 @@ function showLogin() {
         document.getElementById("loginForm").style.display = "none";
         document.getElementById("registerForm").style.display = "none";
         document.getElementById("homePage").style.display = "block";
-        
       } else {
         alert("Please login to access the home page.");
         showLogin();
       }
     }
-
     function registerUser() {
       const username = document.getElementById("registerUsername").value;
       const email = document.getElementById("registerEmail").value;
@@ -108,10 +104,7 @@ function showLogin() {
     if (year === 1931) option.selected = true;
     yearSelect.appendChild(option);
   }
-
-
    document.getElementById("years").textContent = new Date().getFullYear();
-
 
    function showssRegister() {
     document.getElementById("registerForm").style.display = "block";
@@ -128,7 +121,63 @@ function showLogin() {
      document.getElementById("logoutBtn").style.display = "none";
       document.getElementById("ca").style.display = "block";
    }
-   function filterPosts() {
-         
-          document.getElementById("GOSPEL").style.display = "none";
-   }
+  
+    const API_BASE = "https://discoveryprovider.audius.co/v1";
+
+    // Search button
+    document.getElementById("search-btn").addEventListener("click", () => {
+      const query = document.getElementById("search-box").value;
+      if (query.trim() !== "") {
+        searchAudius(query);
+      }
+    });
+
+    // Fetch trending songs on page load
+    window.onload = () => {
+      loadTrending();
+    };
+
+    async function searchAudius(query) {
+      const response = await fetch(`${API_BASE}/tracks/search?query=${encodeURIComponent(query)}&app_name=myapp`);
+      const data = await response.json();
+      displayTracks(data.data, "results");
+    }
+
+    async function loadTrending() {
+      const response = await fetch(`${API_BASE}/tracks/trending?app_name=myapp`);
+      const data = await response.json();
+      displayTracks(data.data, "trending");
+    }
+
+    function displayTracks(tracks, containerId) {
+      const container = document.getElementById(containerId);
+      container.innerHTML = "";
+
+      if (tracks.length === 0) {
+        container.innerHTML = "<p>No songs found.</p>";
+        return;
+      }
+
+      tracks.forEach(track => {
+        const title = track.title;
+        const artist = track.user ? track.user.name : "Unknown Artist";
+        const artwork = track.artwork ? track.artwork['480x480'] : "https://via.placeholder.com/250";
+        const streamUrl = `${API_BASE}/tracks/${track.id}/stream?app_name=myapp`;
+
+        const trackDiv = document.createElement("div");
+        trackDiv.classList.add("track");
+
+        trackDiv.innerHTML = `
+          <img src="${artwork}" alt="${title}">
+          <h4>${title}</h4>
+          <p>👤 ${artist}</p>
+          <audio controls>
+            <source src="${streamUrl}" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <a class="download-btn" href="${streamUrl}" download="${title}.mp3">⬇ Download</a>
+        `;
+
+        container.appendChild(trackDiv);
+      });
+    }
