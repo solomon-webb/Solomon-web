@@ -36,6 +36,7 @@
       background-size: 500% 500%;
       left: 0%;
       right: 0%;
+         overflow-x: hidden;
       z-index: 1000;
     }
     .nav-logo p {
@@ -721,3 +722,62 @@ a {
   font-size: 26px;
   color: #fff;
 }
+  #search-box {
+      margin-bottom: 20px;
+     
+    }
+    #search-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .show {
+      margin-top: 40px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+      text-align: center;
+      color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    #results, #trending {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      text-align: center;
+      color: #fff
+    }
+    .track {
+      background: #222;
+      border-radius: 8px;
+      padding: 10px;
+      width: 250px;
+      color: #fff;
+      text-align: center;
+    }
+    .track img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    audio {
+      margin-top: 10px;
+      width: 100%;
+    }
+    .download-btn {
+      margin-top: 8px;
+      display: inline-block;
+      padding: 8px 12px;
+      background: #ff4500;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .download-btn:hover {
+      background: #e03d00;
+    }
